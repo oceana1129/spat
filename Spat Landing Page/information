@@ -1,0 +1,9 @@
+font: karla
+sizes:
+    h1: 72px; All Caps
+    h2: 72px;
+    p: 36px;
+letter-spacing: 4.5%
+orange: #f79e02;
+blue: #548cf3;
+ion-icons: 100px

@@ -1,0 +1,326 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE COLORS & FONTS
+  ========================================
+*/
+
+html{
+  font-size: 62.5%;
+}
+body, button, input{
+    font-family: 'Karla', sans-serif;
+    color: #548cf3;
+    font-size: 72px;
+    letter-spacing: 4.5%;
+    line-height: 1.3em;
+}
+.whiteText{
+    color: white;
+}
+h1{
+    text-transform: uppercase;
+}
+p{
+    font-size: 36px;
+    line-height: 1.5em;
+}
+ion-icon{
+    font-size: 10rem;
+}
+.ionArrow{
+    font-size: 3.6rem;
+}
+/*
+  ========================================
+  BACKGROUNDS
+  ========================================
+*/
+.whiteBg{
+    background: white;
+}
+.blueBg{
+    background: #548cf3;
+}
+.orangeBg{
+    background: #f79e02;
+}
+.blueBubbles{
+    width: 100%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/oceana-web-designs/image/upload/v1609269551/Spat/illustration-bubbles-blue-right_zn66xe.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right; 
+}
+.orangeBubbles{
+    width: 100%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/oceana-web-designs/image/upload/v1609269565/Spat/illustration-bubbles-orange-right_crnjex.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right; 
+}
+.girlBg{
+    width: 100%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/oceana-web-designs/image/upload/v1609269424/Spat/illustration-girl-on-phone_bwqaoj.png") no-repeat;
+    background-position: 20% 100%;
+}
+
+.handsBg{
+    width: 100%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/oceana-web-designs/image/upload/v1609269427/Spat/illustration-hands-and-phone_syokn5.png") no-repeat;
+    background-position: bottom right;
+}
+.discussBg{
+    width: 100%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/oceana-web-designs/image/upload/v1609269473/Spat/Spat_Argue_Small_mkcrqc.png") no-repeat;
+    background-position: bottom center;
+}
+  /*
+  ========================================
+  SPECIFIC ITEMS
+  ========================================
+*/
+.signUp{
+    width: 100%;
+}
+button{
+    background: #548cf3;
+    border: none;
+    border-radius: 10px;
+    height: 70px;
+    width: 225px;
+    color: white;
+    font-size: 36px;
+}
+input{
+    font-size: 36px;
+    height: 70px;
+    padding-left: 2rem;
+    width: 40%;
+    min-width: 400px;
+    border: 5px solid #548cf3;
+    border-radius: 10px;
+}
+/*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+header, footer, .pad{
+    padding: 5% 15%;
+}
+.alignLeft{
+    display: flex;
+    justify-content: center;
+}
+.alignCenter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.alignLeft{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.flexStack{
+    display: flex;
+    justify-content: space-between;
+} 
+footer .mainText{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+footer p{
+    padding-right: 2rem;
+}
+.half{
+    width: 50%;
+}
+.twoThird{
+    width: 66%;
+}
+
+/*
+  ========================================
+  MINI LAYOUT
+  ========================================
+*/
+
+.heroWrapper{
+    float: right;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.iconsWrapper{
+    width: 80%;
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+.answer{
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+.ask{
+    min-height: 75vh;
+    content: contain;
+}
+.discuss{
+    min-height: 70vh;
+    content: contain;
+    justify-content: flex-start;
+}
+.heroImg{
+    max-width: 339px;
+    width: 100%;
+    max-height: 735px;
+}
+.logoWrapper{
+    width: 70%;
+}
+.appWrapper{
+    width: 60%;
+}
+.spatLogo, .appleStore{
+    width: 100%;
+}
+
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+button:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:active, button:focus{
+    background: #f79e02;
+    outline: none;
+}
+input:active, input:focus{
+    outline: none;
+    border-color: #f79e02;
+}
+footer:hover{
+    background: #d8e7f3;
+    transition: 0.5s;
+}
+footer .mainText:hover{
+    transform: translatex(10px);
+    transition: 0.7s;
+    cursor: pointer;
+}
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media all and (max-width:1050px){
+    .half, .twoThird{
+        width: 100%;
+    }
+    .hero, .ask{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .girlBg, .handsBg{
+        background: none;
+    }
+    .hero .mainText{
+        padding-bottom: 3rem;
+    }
+}
+@media all and (max-width:675px){
+    h1, h2, h3{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    p{
+        font-size: 3rem;
+    }
+    .discussBg{
+        background: none;
+    }
+    .ask, .discuss{
+        align-items: center;
+        justify-content: center;
+    }
+}
